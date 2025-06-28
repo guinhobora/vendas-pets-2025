@@ -9,43 +9,59 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
       background-color: #fdf6f0;
     }
-    h1 {
-      color: #3a5a40;
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
     .intro {
-      background-color: #fff;
+      background-color: #e9ffe9;
+      border-left: 5px solid #4CAF50;
       padding: 20px;
+      margin: 20px;
       border-radius: 8px;
-      margin-bottom: 25px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      line-height: 1.5;
+      line-height: 1.6;
     }
+
     .produto {
       background-color: #fff;
       padding: 15px;
-      margin-bottom: 20px;
+      margin: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .produto img {
       max-width: 100%;
       border-radius: 8px;
       max-height: 250px;
       object-fit: contain;
     }
+
     .produto h2 {
       font-size: 18px;
       margin-top: 10px;
       color: #2f4f4f;
     }
+
     .produto p {
       font-size: 14px;
       margin: 10px 0;
       color: #555;
     }
+
     .botao {
       display: inline-block;
       background-color: #4CAF50;
@@ -55,29 +71,58 @@
       border-radius: 6px;
       font-weight: bold;
     }
+
+    .botao:hover {
+      background-color: #3e8e41;
+    }
+
     .aviso {
       font-size: 12px;
       color: #666;
       margin-top: 6px;
     }
+
     footer {
+      background-color: #f0f0f0;
+      padding: 20px;
       text-align: center;
       font-size: 13px;
       color: #555;
       margin-top: 40px;
     }
+
+    /* Botão flutuante "voltar ao topo" */
+    .topo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4CAF50;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .topo:hover {
+      background-color: #388e3c;
+    }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>🐾 Produtos para Pets 2025</h1>
+    <p>Cuidando do seu pet com carinho e qualidade</p>
+  </header>
+
   <div class="intro">
-    <h1>🐾 Produtos para Pets - Cuide do Seu Cachorro e Gato com Carinho</h1>
     <p>Se você ama seu pet e quer o melhor para ele, confira nossa seleção especial de produtos para cães e gatos. Escolha entre bebedouros automáticos, caminhas confortáveis, coleiras estilosas, brinquedos divertidos e kits completos de higiene para cuidar do seu melhor amigo com todo amor e cuidado.</p>
   </div>
 
   <!-- PRODUTO 1 -->
   <div class="produto">
-    <img src="comedouro.jpg" alt="Bebedouro automático para cachorro" />
+    <img src="https://http2.mlstatic.com/D_NQ_NP_694253-MLB70344478231_072023-O.webp" alt="Bebedouro automático para cachorro" />
     <h2>Bebedouro Automático para Cachorro</h2>
     <p>Prático e eficiente, garante água fresca para seu pet o dia todo.</p>
     <a class="botao" href="https://mercadolivre.com/sec/2PQD7n9" target="_blank" rel="nofollow noopener noreferrer">Ver no Mercado Livre</a>
@@ -86,7 +131,7 @@
 
   <!-- PRODUTO 2 -->
   <div class="produto">
-    <img src="cama.jpg" alt="Caminha confortável para cachorro ou gato" />
+    <img src="https://http2.mlstatic.com/D_NQ_NP_820495-MLB75276051258_032024-O.webp" alt="Caminha confortável para cachorro ou gato" />
     <h2>Caminha Confortável para Cachorro ou Gato</h2>
     <p>Design ergonômico e materiais macios para o descanso perfeito do seu pet.</p>
     <a class="botao" href="https://mercadolivre.com/sec/2PQD7n9" target="_blank" rel="nofollow noopener noreferrer">Ver no Mercado Livre</a>
@@ -95,7 +140,7 @@
 
   <!-- PRODUTO 3 -->
   <div class="produto">
-    <img src="placa.jpg" alt="Coleira com plaquinha para identificação" />
+    <img src="https://http2.mlstatic.com/D_NQ_NP_870285-MLB70780579244_082023-O.webp" alt="Coleira com plaquinha para identificação" />
     <h2>Coleira com Plaquinha para Identificação</h2>
     <p>Segurança e estilo para seu pet, com plaquinha personalizável.</p>
     <a class="botao" href="https://mercadolivre.com/sec/1pLQ7Vz" target="_blank" rel="nofollow noopener noreferrer">Ver no Mercado Livre</a>
@@ -104,7 +149,7 @@
 
   <!-- PRODUTO 4 -->
   <div class="produto">
-    <img src="bolinha.jpg" alt="Brinquedos interativos para cães e gatos" />
+    <img src="https://http2.mlstatic.com/D_NQ_NP_768142-MLB73706227506_122023-O.webp" alt="Brinquedos interativos para cães e gatos" />
     <h2>Brinquedos Interativos para Cães e Gatos</h2>
     <p>Estimule o pet com diversão e brincadeiras inteligentes.</p>
     <a class="botao" href="https://mercadolivre.com/sec/1r5vq7E" target="_blank" rel="nofollow noopener noreferrer">Ver no Mercado Livre</a>
@@ -113,7 +158,7 @@
 
   <!-- PRODUTO 5 -->
   <div class="produto">
-    <img src="kithigiene.jpg" alt="Kit higiene para pets: cortador de unha, escova, shampoo" />
+    <img src="https://http2.mlstatic.com/D_NQ_NP_767209-MLB75294875946_032024-O.webp" alt="Kit higiene para pets: cortador de unha, escova, shampoo" />
     <h2>Kit Higiene para Pets</h2>
     <p>Tudo que você precisa para cuidar da saúde e higiene do seu animalzinho.</p>
     <a class="botao" href="#" target="_blank" rel="nofollow noopener noreferrer">Ver no Mercado Livre</a>
@@ -121,8 +166,12 @@
   </div>
 
   <footer>
-    <p>🔗 Confira também mais produtos para pets no <a href="https://www.mercadolivre.com.br/c/animais-de-estimacao" target="_blank" rel="noopener">Mercado Livre</a>.</p>
+    <p><strong>🔗 Confira também mais produtos para pets no <a href="https://www.mercadolivre.com.br/c/animais-de-estimacao" target="_blank" rel="noopener">Mercado Livre</a>.</strong></p>
+    <p>Site criado por Paulo César © 2025</p>
   </footer>
+
+  <!-- Botão voltar ao topo -->
+  <a href="#" class="topo" title="Voltar ao topo">⬆</a>
 
 </body>
 </html>
